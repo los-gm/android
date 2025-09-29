@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="gm"
+           fetch="https://github.com/los-gm"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/lineage-23.0" />
+
+  <remote  name="glab"
+           fetch="https://gitlab.com/gm-random"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/lineage-23.0" />
+
+  <project path="android" name="android" remote="gm" />
+  <project path="art" name="android_art" remote="gm" />
+  <project path="bionic" name="android_bionic" remote="gm" />
+  <project path="build/make" name="android_build" remote="gm" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" remote="gm" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="frameworks/av" name="android_frameworks_av" remote="gm" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="gm" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="gm" />
+  <project path="kernel/configs" name="android_kernel_configs" remote="gm" />
+  <project path="lineage-sdk" name="android_lineage-sdk" remote="gm" />
+  <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="gm" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="gm" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="gm" />
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="gm" />
+  <project path="system/core" name="android_system_core" remote="gm" />
+  <project path="system/logging" name="android_system_logging" remote="gm" />
+  <project path="vendor/lineage" name="android_vendor_lineage" remote="gm" />
+  <project path="vendor/overlays/translations" name="lineage/translations" remote="glab" />
+
+  <project path="vendor/pixel/clocks" name="lineage/proprietary_vendor_pixel_clocks" remote="glab" />
+  <project path="vendor/pixel/gms" name="lineage/proprietary_vendor_pixel_gms" remote="glab" />
+  <project path="vendor/pixel/gsans" name="lineage/proprietary_vendor_pixel_gsans" remote="glab" />
+  <project path="vendor/pixel/launcher" name="lineage/proprietary_vendor_pixel_launcher" remote="glab" />
+  <project path="vendor/pixel/sounds" name="lineage/proprietary_vendor_pixel_sounds" remote="glab" />
+  <project path="vendor/pixel/themepicker" name="lineage/proprietary_vendor_pixel_themepicker" remote="glab" />
+
+</manifest>

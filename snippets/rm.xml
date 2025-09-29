@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remove-project name="LineageOS/android" />
+  <remove-project name="LineageOS/android_art"  />
+  <remove-project name="LineageOS/android_bionic" />
+  <remove-project name="LineageOS/android_build" />
+  <remove-project name="LineageOS/android_build_soong" />
+  <remove-project name="LineageOS/android_external_google-fonts_google-sans-flex" />
+  <remove-project name="LineageOS/android_frameworks_av" />
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <remove-project name="LineageOS/android_frameworks_native" />
+  <remove-project name="LineageOS/android_kernel_configs" />
+  <remove-project name="LineageOS/android_lineage-sdk" />
+  <remove-project name="LineageOS/android_packages_apps_LineageParts" />
+  <remove-project name="LineageOS/android_packages_apps_Settings" />
+  <remove-project name="LineageOS/android_packages_apps_SimpleDeviceConfig" />
+  <remove-project name="LineageOS/android_packages_modules_Connectivity" />
+  <remove-project name="LineageOS/android_packages_modules_Wifi" />
+  <remove-project name="LineageOS/android_packages_overlays_Lineage" />
+  <remove-project name="LineageOS/android_system_core" />
+  <remove-project name="LineageOS/android_system_logging" />
+  <remove-project name="LineageOS/android_vendor_lineage" />
+
+</manifest>

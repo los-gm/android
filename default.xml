@@ -1011,4 +1011,7 @@
   </project>
 
   <include name="snippets/lineage.xml" />
+  <!-- GM -->
+  <include name="snippets/rm.xml" />
+  <include name="snippets/gm.xml" />
 </manifest>
